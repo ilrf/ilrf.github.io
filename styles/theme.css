@@ -1,0 +1,29 @@
+body {
+    color: black;
+    background-color: #dee2e6;
+}
+
+nav,
+footer {
+    background-color: #212529;
+
+}
+
+nav a,
+.contact a {
+    color: #6c757d;
+}
+
+nav a:hover,
+.contact a:hover {
+    color: white;
+}
+
+main {
+    background-color: #f8f9fa;
+}
+
+
+.copyright {
+    color: #6c757d;
+}
