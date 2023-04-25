@@ -1,0 +1,171 @@
+@import url(/styles/code-prism.css);
+
+
+:root {
+  --md-base-skip: 10px;
+}
+
+:root {
+  --md-block-skip: calc(1.8 * var(--md-base-skip));
+  --md-blockquote-border-color: var(--theme-color);
+  --md-sub-text-color: var(--sub-text-color);
+  --md-theme-color: var(--theme-color);
+  --md-divider-color: var(--divider-color);
+  --md-strong-font-weight: var(--strong-font-weight);
+  --md-diff-bg-color: var(--sub-bg-color);
+
+  --md-code-font-family: var(--font-family-mono);
+}
+
+.markdown h1 {
+  margin: 0 0 calc(6.4 * var(--md-base-skip));
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.markdown h2 {
+  margin: calc(5.6 * var(--md-base-skip)) 0 calc(2.8 * var(--md-base-skip));
+  padding: calc(2.8 * var(--md-base-skip)) 0 0;
+  border-top: 1px solid var(--md-divider-color);
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.markdown h3 {
+  margin: calc(3.2 * var(--md-base-skip)) 0 calc(2.4 * var(--md-base-skip));
+  padding: calc(2.4 * var(--md-base-skip)) 0 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin: calc(2.4 * var(--md-base-skip)) 0 var(--md-block-skip);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.markdown p {
+  margin: var(--md-block-skip) 0 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.markdown a {
+  color: var(--md-sub-text-color);
+}
+
+.markdown a:hover {
+  color: var(--md-theme-color);
+}
+
+.markdown pre,
+.markdown code {
+  font-family: var(--md-code-font-family);
+}
+
+.markdown pre>code {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.markdown pre {
+  padding: calc(1.6 * var(--md-base-skip)) calc(2 * var(--md-base-skip));
+  margin: calc(0.5 * var(--md-block-skip)) 0 var(--md-block-skip);
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.markdown :not(pre)>code {
+  padding: .1em;
+  border-radius: .3em;
+  background-color: var(--md-diff-bg-color);
+  color: var(--md-sub-text-color);
+}
+
+.markdown blockquote {
+  padding: calc(1.6 * var(--md-base-skip)) calc(2.0 * var(--md-base-skip));
+  margin: calc(0.5 * var(--md-block-skip)) 0 var(--md-block-skip);
+  border-left: 4px solid var(--md-blockquote-border-color);
+}
+
+.markdown blockquote>p:first-child {
+  margin-top: 0;
+}
+
+.markdown img {
+  display: block;
+  margin: 0 0 var(--md-block-skip);
+  width: 100%;
+}
+
+.markdown table {
+  margin: calc(0.5 * var(--md-block-skip)) 0 var(--md-block-skip);
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.markdown table tr {
+  border: 1px solid var(--md-divider-color);
+}
+
+.markdown table th,
+.markdown table td {
+  padding: calc(0.8 * var(--md-base-skip)) calc(1.6 * var(--md-base-skip));
+  border-right: 1px solid var(--md-divider-color);
+}
+
+.markdown table tr:nth-child(2n),
+.markdown thead {
+  background-color: var(--md-diff-bg-color);
+}
+
+.markdown table th {
+  font-weight: var(--md-strong-font-weight);
+}
+
+.markdown>ul {
+  margin: 0 0 var(--md-block-skip);
+}
+
+.markdown li {
+  line-height: 1.7;
+  margin: .1em 0;
+}
+
+.markdown ul {
+  padding-left: 1em;
+}
+
+.markdown li {
+  list-style: disc;
+}
+
+
+.markdown .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+@media(max-width:600px) {
+  :root {
+    --md-base-skip: 5px;
+  }
+
+  .markdown h1 {
+    font-size: 24px;
+  }
+
+  .markdown h2 {
+    font-size: 18px;
+  }
+
+  .markdown h3 {
+    font-size: 16px;
+  }
+
+  .markdown blockquote {
+    border-left-width: 3px;
+  }
+}

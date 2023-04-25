@@ -1,0 +1,79 @@
+:root {
+  --header-height: 50px;
+
+  --screen-max-width: 1376px;
+
+  --footer-height: 96px;
+
+  --article-max-width: 696px;
+  --article-min-width: 288px;
+
+  --article-sidebar-width: 320px;
+
+  --header-icon-scale: 20px;
+}
+
+
+
+:root {
+  --article-list-item-height: 60px;
+}
+
+
+:root {
+  --color-yellow: #fee440;
+  --color-blue: #00bbf9;
+  --color-green: #00f5d4;
+  --color-pink: #f15bb5;
+  --color-purpose: #9b5de5;
+}
+
+
+:root {
+  --bg-color-light: #fff;
+  --sub-bg-color-light: #f1f1f1;
+  --text-color-light: #213547;
+  --sub-text-color-light: #727374;
+  --divider-color-light: rgba(60, 60, 60, .3);
+
+}
+
+:root {
+  --bg-color-dark: #1a1a1a;
+  --sub-bg-color-dark: #2f2f2f;
+  --text-color-dark: rgba(255, 255, 255, .9);
+  --sub-text-color-dark: rgba(235, 235, 235, .6);
+  --divider-color-dark: rgba(84, 84, 84, .5);
+
+}
+
+
+:root {
+  --bg-color: var(--bg-color-light);
+  --sub-bg-color: var(--sub-bg-color-light);
+  --text-color: var(--text-color-light);
+  --sub-text-color: var(--sub-text-color-light);
+  --divider-color: var(--divider-color-light);
+}
+
+
+:root {
+
+  --theme-color: var(--color-purpose);
+}
+
+:root {
+  --footer-bg-color: var(--sub-bg-color);
+
+}
+
+
+:root {
+  --header-font-size: 15px;
+  --footer-fong-size: 15px;
+}
+
+
+:root {
+  --strong-font-weight: 600;
+}

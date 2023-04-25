@@ -1,0 +1,33 @@
+@import url(/styles/common.css);
+@import url(/styles/layout.css);
+
+
+.article-index .main ul {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.article-index li {
+  height: var(--article-list-item-height);
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+
+.article-index .main li a {
+  display: block;
+  height: inherit;
+  padding: 12px 16px;
+
+}
+
+
+.article-index .main li {
+  background-color: var(--sub-bg-color);
+}
+
+
+.sidebar-wrap {
+  display: none;
+}

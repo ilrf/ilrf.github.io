@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Homepage</title>
+
+  <link rel="stylesheet" href="/styles/article-index.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+
+<body>
+  <!-- Begin header -->
+
+  {{{header}}}
+
+  <!-- End header -->
+
+  <article class="article article-index">
+    <div class="container">
+      <main class="main-wrap">
+        <div class="main">
+          <ul>
+            {{#each content}}
+            <li><a href="{{this.link}}">{{this.title}}</a></li>
+            {{/each}}
+          </ul>
+
+        </div>
+      </main>
+
+      <aside class="sidebar-wrap">
+        <div class="sidebar">
+          <div class="sidebar-title">
+            <span>TIMELINE</span>
+          </div>
+          <div class="sidebar-body">
+
+          </div>
+        </div>
+      </aside>
+    </div>
+  </article>
+
+
+  <!-- Begin footer -->
+
+  {{{footer}}}
+
+  <!-- End footer -->
+
+  <script src="/scripts/common.js"></script>
+
+</body>
+
+</html>

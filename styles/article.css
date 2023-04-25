@@ -1,0 +1,33 @@
+@import url(/styles/common.css);
+@import url(/styles/layout.css);
+@import url(/styles/markdown.css);
+
+
+
+
+.outline-body {
+  position: relative;
+}
+
+.outline-marker {
+  position: absolute;
+  left: -12px;
+  top: 4px;
+  width: 4px;
+  height: 20px;
+  background-color: var(--theme-color);
+  border-radius: 4px;
+}
+
+
+.outline li {
+  overflow: hidden;
+  height: 28px;
+  line-height: 28px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.outline .sidebar-title {
+  cursor: pointer;
+}

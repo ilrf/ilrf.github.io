@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+li {
+  list-style: none;
+}
+
+em {
+  font-style: normal;
+}
+
+button {
+  border: none;
+  background-color: #fff;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+body {
+  width: 100vw;
+  font-size: 16px;
+}
